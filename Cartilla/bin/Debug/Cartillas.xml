@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <Cartillas>
+    <Especialidad>psicologia</Especialidad>
+    <Medico>dr rinaldi</Medico>
+  </Cartillas>
+  <Cartillas>
+    <Especialidad>odontologia</Especialidad>
+    <Medico>dr rivera</Medico>
+  </Cartillas>
+  <Cartillas>
+    <Especialidad>Cardiologia</Especialidad>
+    <Medico>Dr, Lozano</Medico>
+  </Cartillas>
+  <Cartillas>
+    <Especialidad>f</Especialidad>
+    <Medico>c</Medico>
+  </Cartillas>
+  <Cartillas>
+    <Especialidad>HOLS</Especialidad>
+    <Medico>FJLS</Medico>
+  </Cartillas>
+</DocumentElement>

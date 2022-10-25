@@ -31,7 +31,6 @@
             this.dgCartilla = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.txtEspecialidad = new System.Windows.Forms.TextBox();
             this.txtMedico = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,21 +39,24 @@
             this.btnBorrar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.btnVerTurno = new System.Windows.Forms.Button();
+            this.cbEspecialidades = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgCartilla)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // dgCartilla
             // 
             this.dgCartilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgCartilla.Location = new System.Drawing.Point(23, 249);
+            this.dgCartilla.Location = new System.Drawing.Point(109, 290);
             this.dgCartilla.MultiSelect = false;
             this.dgCartilla.Name = "dgCartilla";
             this.dgCartilla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgCartilla.Size = new System.Drawing.Size(306, 227);
+            this.dgCartilla.Size = new System.Drawing.Size(238, 254);
             this.dgCartilla.TabIndex = 0;
-            this.dgCartilla.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgCartilla_CellContentClick);
             // 
             // label1
             // 
@@ -73,13 +75,6 @@
             this.lblTitulo.Size = new System.Drawing.Size(229, 22);
             this.lblTitulo.TabIndex = 2;
             this.lblTitulo.Text = "CONSULTORIO MEDICO";
-            // 
-            // txtEspecialidad
-            // 
-            this.txtEspecialidad.Location = new System.Drawing.Point(23, 152);
-            this.txtEspecialidad.Name = "txtEspecialidad";
-            this.txtEspecialidad.Size = new System.Drawing.Size(143, 20);
-            this.txtEspecialidad.TabIndex = 1;
             // 
             // txtMedico
             // 
@@ -144,7 +139,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(63, 226);
+            this.label4.Location = new System.Drawing.Point(141, 267);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(168, 20);
             this.label4.TabIndex = 13;
@@ -159,34 +154,89 @@
             this.label5.TabIndex = 17;
             this.label5.Text = "Cargar Cartilla Medica";
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(813, 199);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 26;
-            this.button2.Text = "Borrar";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // btnVerTurno
             // 
-            this.btnVerTurno.Image = global::Cartilla.Properties.Resources.icontur;
-            this.btnVerTurno.Location = new System.Drawing.Point(417, 191);
+            this.btnVerTurno.BackColor = System.Drawing.Color.Aqua;
+            this.btnVerTurno.Location = new System.Drawing.Point(376, 393);
             this.btnVerTurno.Name = "btnVerTurno";
-            this.btnVerTurno.Size = new System.Drawing.Size(80, 90);
+            this.btnVerTurno.Size = new System.Drawing.Size(96, 38);
             this.btnVerTurno.TabIndex = 27;
-            this.btnVerTurno.UseVisualStyleBackColor = true;
+            this.btnVerTurno.Text = "VER TURNOS";
+            this.btnVerTurno.UseVisualStyleBackColor = false;
             this.btnVerTurno.Click += new System.EventHandler(this.btnVerTurno_Click);
+            // 
+            // cbEspecialidades
+            // 
+            this.cbEspecialidades.FormattingEnabled = true;
+            this.cbEspecialidades.Items.AddRange(new object[] {
+            "Alergología",
+            "Anestesiología",
+            "Angiología",
+            "Cardiología",
+            "Endocrinología",
+            "Estomatología",
+            "Farmacología Clínica",
+            "Gastroenterología",
+            "Genética",
+            "Geriatría",
+            "Hematología",
+            "Hepatología",
+            "Infectología",
+            "Medicina aeroespacial",
+            "Medicina del deporte",
+            "Medicina familiar y comunitaria",
+            "Medicina física y rehabilitación",
+            "Medicina forense",
+            "Medicina intensiva",
+            "Medicina interna",
+            "Medicina preventiva y salud pública",
+            "Medicina del trabajo",
+            "Nefrología",
+            "Neumología",
+            "Neurología",
+            "Nutriología",
+            "Oncología médica",
+            "Oncología radioterápica",
+            "Pediatría",
+            "Psiquiatría",
+            "Reumatología",
+            "Toxicología"});
+            this.cbEspecialidades.Location = new System.Drawing.Point(23, 152);
+            this.cbEspecialidades.Name = "cbEspecialidades";
+            this.cbEspecialidades.Size = new System.Drawing.Size(143, 21);
+            this.cbEspecialidades.TabIndex = 28;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Cartilla.Properties.Resources.iconTurno;
+            this.pictureBox1.Location = new System.Drawing.Point(478, 373);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(75, 86);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 30;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Cartilla.Properties.Resources.undraw_medicine_b1ol__1_;
+            this.pictureBox2.Location = new System.Drawing.Point(518, -28);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(404, 395);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 31;
+            this.pictureBox2.TabStop = false;
             // 
             // Medicine
             // 
             this.AcceptButton = this.btnCargar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(914, 555);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.cbEspecialidades);
             this.Controls.Add(this.btnVerTurno);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnBorrar);
@@ -195,13 +245,14 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtMedico);
-            this.Controls.Add(this.txtEspecialidad);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgCartilla);
             this.Name = "Medicine";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dgCartilla)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,7 +263,6 @@
         private System.Windows.Forms.DataGridView dgCartilla;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.TextBox txtEspecialidad;
         private System.Windows.Forms.TextBox txtMedico;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -221,8 +271,10 @@
         private System.Windows.Forms.Button btnBorrar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnVerTurno;
+        private System.Windows.Forms.ComboBox cbEspecialidades;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

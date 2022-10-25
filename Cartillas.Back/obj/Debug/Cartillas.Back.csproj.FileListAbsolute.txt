@@ -4,3 +4,9 @@ C:\Practicas0.1\Cartillas\Cartillas.Back\obj\Debug\Cartillas.Back.csproj.Assembl
 C:\Practicas0.1\Cartillas\Cartillas.Back\obj\Debug\Cartillas.Back.csproj.CoreCompileInputs.cache
 C:\Practicas0.1\Cartillas\Cartillas.Back\obj\Debug\Cartillas.Back.dll
 C:\Practicas0.1\Cartillas\Cartillas.Back\obj\Debug\Cartillas.Back.pdb
+C:\Users\Usuario\Pictures\eli\Proyectos\cartilla\Cartillas.Back\bin\Debug\Cartillas.Back.dll
+C:\Users\Usuario\Pictures\eli\Proyectos\cartilla\Cartillas.Back\bin\Debug\Cartillas.Back.pdb
+C:\Users\Usuario\Pictures\eli\Proyectos\cartilla\Cartillas.Back\obj\Debug\Cartillas.Back.csproj.AssemblyReference.cache
+C:\Users\Usuario\Pictures\eli\Proyectos\cartilla\Cartillas.Back\obj\Debug\Cartillas.Back.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Pictures\eli\Proyectos\cartilla\Cartillas.Back\obj\Debug\Cartillas.Back.dll
+C:\Users\Usuario\Pictures\eli\Proyectos\cartilla\Cartillas.Back\obj\Debug\Cartillas.Back.pdb

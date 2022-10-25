@@ -19,7 +19,7 @@ namespace Cartillas.Back
             DT.TableName = "Cartillas";
             DT.Columns.Add("Especialidad", typeof(String));
             DT.Columns.Add("Medico", typeof(String));
-            DT.Columns.Add("Ver Turno"); //boton??
+           
             //Cartilla1 cartilla = new Cartilla1();
 
             //DT ButtonColumns btn = new DTButtonColumns();
@@ -33,7 +33,7 @@ namespace Cartillas.Back
             Leer_DT();
         }
 
-        public bool CargarCartilla(Cartilla1 cartilla) {
+        public bool CargarCartilla(CartillaModel cartilla) {
             bool res = false;
             DT.Rows.Add();
             int i = DT.Rows.Count - 1;
@@ -75,9 +75,9 @@ namespace Cartillas.Back
         }
 
         //metodo buscar
-        public Cartilla1 BuscarCartilla(string especialidad)
+        public CartillaModel BuscarCartilla(string especialidad)
         {
-            Cartilla1 cartilla = new Cartilla1();   
+            CartillaModel cartilla = new CartillaModel();   
            for(int i= 0; i < DT.Rows.Count; i++)
            {
                 if (DT.Rows[i]["especialidad"].ToString() == especialidad)

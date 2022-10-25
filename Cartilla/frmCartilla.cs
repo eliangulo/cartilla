@@ -26,8 +26,8 @@ namespace Cartilla
 
         private void btnCargar_Click(object sender, EventArgs e)
         {
-            Cartilla1 cartilla = new Cartilla1();
-            cartilla.Especialidad = txtEspecialidad.Text;
+            CartillaModel cartilla = new CartillaModel();
+            cartilla.Especialidad = cbEspecialidades.SelectedItem.ToString();
             cartilla.Medico = txtMedico.Text;
 
             cartillas.CargarCartilla(cartilla);
@@ -35,68 +35,41 @@ namespace Cartilla
         }
         private void LimpiarPantalla()
         {
-            txtEspecialidad.Text = "";
+           // txtEspecialidad.Text = "";
             txtMedico.Text = "";
 
-            txtEspecialidad.Focus();
+            //txtEspecialidad.Focus();
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            Cartilla1 cartilla = new Cartilla1();
-            cartillas.BuscarCartilla(txtEspecialidad.Text);
+            CartillaModel cartilla = new CartillaModel();
+            cartillas.BuscarCartilla(cbEspecialidades.SelectedItem.ToString());
              
             if(cartilla.Especialidad != null)
             {
-                txtEspecialidad.Text=cartilla.Especialidad; 
+                cbEspecialidades.Text=cartilla.Especialidad; 
                 txtMedico.Text=cartilla.Medico;
             }
 
-            txtEspecialidad.Focus();
-            txtEspecialidad.SelectAll();
+           // txtEspecialidad.Focus();
+           // txtEspecialidad.SelectAll();
         }
 
         private void btnBorrar_Click(object sender, EventArgs e)
         {
 
-            bool res = cartillas.BorrarCartilla(txtEspecialidad.Text);
+            bool res = cartillas.BorrarCartilla(cbEspecialidades.SelectedItem.ToString());
             if (res)
             {
                 LimpiarPantalla();
             }
             else
             {
-                txtEspecialidad.Focus();
-                txtEspecialidad.SelectAll();
+               // txtEspecialidad.Focus();
+                //txtEspecialidad.SelectAll();
             }
           
-        }
-
-       // private void label8_Click(object sender, EventArgs e)
-       // {
-
-        //}
-
-
-
-        private void dgCartilla_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            Int32 selectedRowCount =
-            dgCartilla.Rows.GetRowCount(DataGridViewElementStates.Selected);
-            if (selectedRowCount > 0)
-            {
-                System.Text.StringBuilder sb = new System.Text.StringBuilder();
-
-                for (int i = 0; i < selectedRowCount; i++)
-                {
-                    sb.Append("Row: ");
-                    sb.Append(dgCartilla.SelectedRows[i].Index.ToString());
-                    sb.Append(Environment.NewLine);
-                }
-
-                sb.Append("Total: " + selectedRowCount.ToString());
-                MessageBox.Show(sb.ToString(), "Selected Rows");
-            }
         }
 
         private void btnVerTurno_Click(object sender, EventArgs e)
@@ -113,11 +86,9 @@ namespace Cartilla
                     sb.Append(dgCartilla.SelectedRows[i].Index.ToString());
                     sb.Append(Environment.NewLine);
 
-                    Cartilla1 cartilla = new Cartilla1();
-                    //cartilla.Especialidad = dgCartilla.SelectedRows[i].Index["Especialidad"].ToString();
-                    //cartilla.Medico = dgCartilla.SelectedRows[i].Index.Cells["Medico"].ToString();
-                    cartilla.Especialidad = dgCartilla.SelectedRows[i].Cells[0].Value.ToString();
-                    cartilla.Medico = dgCartilla.SelectedRows[i].Cells[1].Value.ToString();
+                    CartillaModel cartilla = new CartillaModel();
+                    cartilla.Especialidad = dgCartilla.SelectedRows[i].Cells[0].Value.ToString(); // Especialidad
+                    cartilla.Medico = dgCartilla.SelectedRows[i].Cells[1].Value.ToString(); // Medico
 
                     //creo el objeto nuevo y paso un objeto 
                     Form2 turno = new Form2(cartilla);
@@ -125,5 +96,6 @@ namespace Cartilla
                 }
             }
         }
+
     }
 }

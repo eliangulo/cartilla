@@ -1,7 +1,11 @@
 <?xml version="1.0" standalone="yes"?>
 <DocumentElement>
   <Cartillas>
-    <Especialidad>Alergología</Especialidad>
-    <Medico />
+    <Especialidad>Oncología médica</Especialidad>
+    <Medico>Lopez Mariana</Medico>
+  </Cartillas>
+  <Cartillas>
+    <Especialidad>Genética</Especialidad>
+    <Medico>Dr Cristante</Medico>
   </Cartillas>
 </DocumentElement>

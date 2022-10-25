@@ -31,6 +31,12 @@ namespace Cartilla
 
         private void btnCargar_Click(object sender, EventArgs e)
         {
+            if (txtDia.Text.Equals("") || cbHora.Text.Equals(""))
+            {
+                string text = "Debe Selecccionar el dia en el calendario y seleccionar una hora";
+                MessageBox.Show(text);
+                return;
+            }
             TurnoModel turno = new TurnoModel();
             turno.Especialidad = cartilla.Especialidad;
             turno.Medico = cartilla.Medico;

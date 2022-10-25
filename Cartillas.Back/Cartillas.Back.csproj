@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="CartillaModel.cs" />
     <Compile Include="Cartillas.cs" />
+    <Compile Include="Turno.cs" />
+    <Compile Include="TurnoModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

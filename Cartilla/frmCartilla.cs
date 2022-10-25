@@ -58,6 +58,19 @@ namespace Cartilla
 
         private void btnBorrar_Click(object sender, EventArgs e)
         {
+            if (cbEspecialidades.Text.Equals("")) {
+                string text = "Debe Selecccionar la especialidad";
+                MessageBox.Show(text);
+                return;
+            }
+
+            if (txtMedico.Text.Equals(""))
+            {
+                string text = "Debe Completar el campo Mèdico";
+                MessageBox.Show(text);
+                return;
+            }
+
 
             bool res = cartillas.BorrarCartilla(cbEspecialidades.SelectedItem.ToString());
             if (res)

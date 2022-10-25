@@ -173,7 +173,7 @@
             "09:00 PM\t",
             "10:00 PM\t",
             "11:00 PM\t"});
-            this.cbHora.Location = new System.Drawing.Point(287, 91);
+            this.cbHora.Location = new System.Drawing.Point(281, 93);
             this.cbHora.Name = "cbHora";
             this.cbHora.Size = new System.Drawing.Size(121, 21);
             this.cbHora.TabIndex = 39;

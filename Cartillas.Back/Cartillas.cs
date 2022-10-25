@@ -19,16 +19,6 @@ namespace Cartillas.Back
             DT.TableName = "Cartillas";
             DT.Columns.Add("Especialidad", typeof(String));
             DT.Columns.Add("Medico", typeof(String));
-           
-            //Cartilla1 cartilla = new Cartilla1();
-
-            //DT ButtonColumns btn = new DTButtonColumns();
-            //DT.columns.Add(btn);
-            //btn.Text = "VerTurno";
-            //btn.Name = "VerTurno";
-           // btn.UserColumnsTextButtonValue = true;
-
-            //metodo leer el arquivo si existe y carga los datos dt=la misma estructura
 
             Leer_DT();
         }
@@ -59,6 +49,7 @@ namespace Cartillas.Back
             }
             return res;
         }
+
         public int BuscarFilaCartilla(string especialidad)
         {
             int fila = -1;
@@ -90,9 +81,6 @@ namespace Cartillas.Back
                 
             return cartilla;    
         }
-
-
-
 
         //metodoDT
         private void Leer_DT()

@@ -3,26 +3,11 @@
   <Turnos>
     <Especialidad>Oncología médica</Especialidad>
     <Medico>Lopez Mariana</Medico>
-    <Fecha>11/11/2022 </Fecha>
-  </Turnos>
-  <Turnos>
-    <Especialidad>Oncología médica</Especialidad>
-    <Medico>Lopez Mariana</Medico>
-    <Fecha> 05:00 AM	</Fecha>
-  </Turnos>
-  <Turnos>
-    <Especialidad>Oncología médica</Especialidad>
-    <Medico>Lopez Mariana</Medico>
-    <Fecha>15/10/2022 04:00 AM	</Fecha>
-  </Turnos>
-  <Turnos>
-    <Especialidad>Oncología médica</Especialidad>
-    <Medico>Lopez Mariana</Medico>
-    <Fecha>8/9/2022 </Fecha>
-  </Turnos>
-  <Turnos>
-    <Especialidad>Oncología médica</Especialidad>
-    <Medico>Lopez Mariana</Medico>
     <Fecha>6/10/2022 12:00 AM	</Fecha>
+  </Turnos>
+  <Turnos>
+    <Especialidad>Oncología médica</Especialidad>
+    <Medico>Dr Tolosa</Medico>
+    <Fecha>15/10/2022 03:00 AM</Fecha>
   </Turnos>
 </DocumentElement>

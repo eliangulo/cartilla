@@ -35,7 +35,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnCargar = new System.Windows.Forms.Button();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.btnBorrar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -103,8 +102,8 @@
             // 
             // btnCargar
             // 
-            this.btnCargar.BackColor = System.Drawing.Color.DarkSalmon;
-            this.btnCargar.Location = new System.Drawing.Point(217, 165);
+            this.btnCargar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnCargar.Location = new System.Drawing.Point(217, 152);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(75, 23);
             this.btnCargar.TabIndex = 3;
@@ -112,22 +111,11 @@
             this.btnCargar.UseVisualStyleBackColor = false;
             this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
             // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBuscar.Location = new System.Drawing.Point(217, 136);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscar.TabIndex = 4;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = false;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
             // btnBorrar
             // 
-            this.btnBorrar.BackColor = System.Drawing.Color.Red;
+            this.btnBorrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnBorrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnBorrar.Location = new System.Drawing.Point(217, 194);
+            this.btnBorrar.Location = new System.Drawing.Point(217, 181);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(75, 23);
             this.btnBorrar.TabIndex = 5;
@@ -156,7 +144,7 @@
             // 
             // btnVerTurno
             // 
-            this.btnVerTurno.BackColor = System.Drawing.Color.Aqua;
+            this.btnVerTurno.BackColor = System.Drawing.Color.MediumSpringGreen;
             this.btnVerTurno.Location = new System.Drawing.Point(376, 393);
             this.btnVerTurno.Name = "btnVerTurno";
             this.btnVerTurno.Size = new System.Drawing.Size(96, 38);
@@ -232,7 +220,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(914, 555);
+            this.ClientSize = new System.Drawing.Size(928, 555);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cbEspecialidades);
@@ -240,7 +228,6 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnBorrar);
-            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnCargar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -267,7 +254,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnCargar;
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnBorrar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;

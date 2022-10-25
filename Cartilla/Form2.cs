@@ -17,15 +17,10 @@ namespace Cartilla
             dgTurno.DataSource = turnos.DT;
             this.cartilla = cartilla; //argumento
             textBox1.Text = this.cartilla.Especialidad;
-            //LimpiarPantalla();
-
-            /*DataTable dt = turnos.DT.AsEnumerable()
-                .Where(row => row.Field<String>("Especialidad") == cartilla.Especialidad &&
-                              row.Field<String>("Medico") == cartilla.Medico)
-                .CopyToDataTable();*/
 
             DataView dv = new DataView(turnos.DT);
             dv.RowFilter = "Especialidad = '" + cartilla.Especialidad + "'";
+            dv.RowFilter = "Medico = '" + cartilla.Medico + "'";
             dgTurno.DataSource = dv;
         }
 

@@ -20,7 +20,9 @@ namespace Cartilla
         public Medicine()
         {
             InitializeComponent();
-            dgCartilla.DataSource = cartillas.DT;
+            DataView dv = new DataView(cartillas.DT);
+            dv.Sort = "Especialidad ASC"; //ASENDENTE
+            dgCartilla.DataSource = dv;
             LimpiarPantalla();
         }
 
@@ -35,10 +37,10 @@ namespace Cartilla
         }
         private void LimpiarPantalla()
         {
-           // txtEspecialidad.Text = "";
+          
             txtMedico.Text = "";
 
-            //txtEspecialidad.Focus();
+           
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -51,9 +53,6 @@ namespace Cartilla
                 cbEspecialidades.Text=cartilla.Especialidad; 
                 txtMedico.Text=cartilla.Medico;
             }
-
-           // txtEspecialidad.Focus();
-           // txtEspecialidad.SelectAll();
         }
 
         private void btnBorrar_Click(object sender, EventArgs e)
@@ -76,11 +75,6 @@ namespace Cartilla
             if (res)
             {
                 LimpiarPantalla();
-            }
-            else
-            {
-               // txtEspecialidad.Focus();
-                //txtEspecialidad.SelectAll();
             }
           
         }

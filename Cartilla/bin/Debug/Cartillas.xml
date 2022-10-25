@@ -8,4 +8,8 @@
     <Especialidad>Genética</Especialidad>
     <Medico>Dr Cristante</Medico>
   </Cartillas>
+  <Cartillas>
+    <Especialidad>Oncología médica</Especialidad>
+    <Medico>Dr Tolosa</Medico>
+  </Cartillas>
 </DocumentElement>
